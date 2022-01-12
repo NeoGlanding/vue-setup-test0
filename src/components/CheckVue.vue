@@ -1,5 +1,5 @@
 <template>
-    <h1>My name is <span v-show="visible">{{ name }}</span></h1>
+    <h1 class="thissock">My name is <span v-show="visible">{{ name }}</span></h1>
     <button @click="toggler()">Show Name</button>
 </template>
 
@@ -18,3 +18,9 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+    .thissock {
+        color: red;
+    }
+</style>
